@@ -40,7 +40,7 @@ int solve(int n) {
 
 int main() {
 #ifdef _MY_DEBUG
-  ifstream fin("the_accountant_in.txt");
+  ifstream fin("next_integer_permutation_in.txt");
   cin.rdbuf(fin.rdbuf());
 #endif
 
