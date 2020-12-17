@@ -44,7 +44,7 @@ int solve(string s, string t) {
 
 int main() {
 #ifdef _MY_DEBUG
-  ifstream fin("the_accountant_in.txt");
+  ifstream fin("unique_subsequences_equal_to_target_in.txt");
   cin.rdbuf(fin.rdbuf());
 #endif
 
