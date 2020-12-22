@@ -4,7 +4,7 @@
   
   https://binarysearch.com/problems/Longest-Substring-with-Even-Vowel-Counts
 */
-// Solution: 
+// Solution: https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/discuss/967503/Short-C%2B%2B-Solution
 
 int solve(string s) {
     unordered_map<int, int> indexes{{0, -1}};
