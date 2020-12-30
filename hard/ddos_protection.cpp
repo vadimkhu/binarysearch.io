@@ -1,3 +1,10 @@
+/*
+    DDoS Protection
+    Question 435 of 975
+
+    https://binarysearch.com/problems/DDoS-Protection
+*/
+
 int solve(vector<vector<int>>& requests, int u, int g) {
     const int TIME_WINDOW = 60;
 
@@ -6,9 +13,10 @@ int solve(vector<vector<int>>& requests, int u, int g) {
 
     int processed = 0;
 
-    // sort using brainfuck style lambda
+    // Sort using brainfuck style lambda.
+    // If there are requests at the same time by multiple users, requests with lower user_id are processed first.
     sort(requests.begin(), requests.end(), [](const vector<int> &l, const vector<int> &r) -> bool {
-        return l[1] < r[1] ? true : l[1] > r[1] ? false : l[0] < r[0];
+        return l[1] < r[1] ? true : (l[1] > r[1] ? false : l[0] < r[0]);
     });
     for (auto request : requests) {
         if (window.empty()) {
