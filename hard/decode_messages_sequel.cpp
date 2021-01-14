@@ -1,3 +1,9 @@
+/*
+    Decode Messages Sequel
+    
+    https://binarysearch.com/problems/Decode-Messages-Sequel
+*/
+
 int solve(string s) {
     size_t n = s.size();
     const int mod = 1e9 + 7;
