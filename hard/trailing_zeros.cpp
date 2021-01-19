@@ -5,16 +5,7 @@
   https://binarysearch.com/problems/Trailing-Zeros
 */
 
-int count_2(int k) {
-    int res = 0;
-    while (k) {
-        res++;
-        k >>= 1;
-    }
-    return res;
-}
-
-int count_5(int k) {
+int log_5(int k) {
     int res = 0;
     while (k >= 5) {
         res++;
@@ -24,5 +15,5 @@ int count_5(int k) {
 }
 
 int solve(int k) {
-    return min(count_2(k), count_5(k));    
+    return log_5(k);
 }
